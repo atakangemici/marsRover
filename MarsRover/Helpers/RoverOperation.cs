@@ -42,7 +42,7 @@ namespace MarsRover.Common
             return result;
         }
 
-        //Pusula üzerinde sağa dönme işlemi için görevlendirilen method.
+        //Pusula yönlerine uygun olarak talimatlar doğrultusunda sağa dönme işlemi için görevlendirilen method.
         public async Task TurnRight(string moveDirection)
         {
             switch (moveDirection)
@@ -62,7 +62,7 @@ namespace MarsRover.Common
             }
         }
 
-        //Pusula üzerinde sola dönme işlemi için görevlendirilen method.
+        //Pusula yönlerine uygun olarak Talimatlar doğrultusunda sola dönme işlemi için görevlendirilen method.
         public async Task TurnLeft(string moveDirection)
         {
             switch (moveDirection)
@@ -82,7 +82,7 @@ namespace MarsRover.Common
             }
         }
 
-        //Pusula üzerinde hareket etmek üzere görevlendirilen method.
+        //Talimatlar doğrultusunda verilen koordinatlara göre hareket etmek üzere görevlendirilen method.
         public async Task GoMove(int coordinateX, int coordinateY, string moveDirection)
         {
             switch (moveDirection)
